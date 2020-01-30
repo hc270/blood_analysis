@@ -25,6 +25,9 @@ def cholesterol_analysis() :
 	elif test_info[0].strip() == "LDL" :
 		print(HDL_analysis(int(test_info[1])))
 
+def new_feature() :
+	pass
+
 def interface() :
 	while True :
 		print("Cholesterol Calculator")
