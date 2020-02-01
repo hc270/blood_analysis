@@ -16,7 +16,7 @@ def LDL_analysis(LDL_level):
         return 'High'
     elif 190 <= LDL_level:
         return 'Very high'
-
+ 
 
 def cholesterol_analysis():
     print("Cholesterol_Analysis")
@@ -40,6 +40,13 @@ def interface():
         elif choice == '1':
             cholesterol_analysis()
 
+
+def fever_check(temp_list):
+    fever = False
+    for temperature in temp_list:
+        if temperature > 98.6:
+            fever = True
+        return fever
 
 if __name__ == "__main__":
     interface()
